@@ -30,8 +30,8 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  //const [fieldsEmpty, setFieldsEmpty] = useState(false);
-  //const [sucess,setSucess]=useState(false);
+  const [fieldsEmpty, setFieldsEmpty] = useState(false);
+  const [sucess,setSucess]=useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
