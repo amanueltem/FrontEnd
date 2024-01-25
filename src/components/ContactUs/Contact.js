@@ -2,7 +2,7 @@ import React from "react";
 import "./contact.css"; // Make sure to replace with your actual CSS file
 import url1 from "./gmail.jpg"; // Replace with the actual path to your image1
 import url2 from "./phone.png"; // Replace with the actual path to your image2
-import { NavLink } from "react-router-dom";
+import  from "react-router-dom";
 
 const Contact = () => {
   const phoneNumber = "+251900000001"; // Replace with your actual phone number

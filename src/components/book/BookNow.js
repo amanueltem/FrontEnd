@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { NavLink, Link,useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Book.css'
 export default function BookNow() {
@@ -11,7 +11,7 @@ export default function BookNow() {
   const [transportation, setTransportation] = useState("");
   const [duration, setDuration] = useState(0);
   const [number, setNumber] = useState(0);
-  const [validationFailed, setValidationFailed] = useState(false);
+  //const [validationFailed, setValidationFailed] = useState(false);
   const [fieldsEmpty, setFieldsEmpty] = useState(false);
   const page = "BookNow";
   
@@ -50,7 +50,7 @@ export default function BookNow() {
       page,
     });
     console.log("\n\n\n...."+em);
-    if(em!=""){
+    if(em!==""){
       navigate(`/payforbook?destination=${places[selectedPlace].name}&date=${date}&transportation=${transportation}&duration=${duration}&number=${number}`);
     }
     else{

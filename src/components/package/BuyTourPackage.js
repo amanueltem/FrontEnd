@@ -3,7 +3,6 @@ import axios from "axios";
 import React from "react";
 import Packages from "./Packages";
 import "./Packages.css";
-import { NavLink } from "react-router-dom";
 const BuyTourPackage = () => {
   const [packages, setPackages] = useState([]);
   useEffect(() => {

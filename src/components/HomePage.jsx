@@ -2,7 +2,6 @@ import React from "react";
 import "./HomePage.css";
 import video from "./ShowPhoto/video.mp4";
 //import video from "../../Assets/video.mp4";
-import { NavLink } from "react-router-dom";
 import SideShow from "./SideShow.js";
 /*
       <nav>

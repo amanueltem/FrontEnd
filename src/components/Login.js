@@ -30,8 +30,8 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [fieldsEmpty, setFieldsEmpty] = useState(false);
-  const [sucess,setSucess]=useState(false);
+  //const [fieldsEmpty, setFieldsEmpty] = useState(false);
+  //const [sucess,setSucess]=useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,7 +48,7 @@ const Login = () => {
         password,
       });
       console.log(response.data);
-      if(response.data=="sucess"){
+      if(response.data==="sucess"){
         window.localStorage.setItem("email",email);
         login(email);
       setSucess(true)
@@ -75,11 +75,11 @@ setPassword('');
   
   
    const { user, login, logout } = useAuth();
-    const handleLogout = () => {
+    /*const handleLogout = () => {
     logout();
     // Redirect to the login page or any other desired page
     navigate('/login');
-  };
+  };*/
    useEffect(() => {
     if (user) {
       navigate('/');

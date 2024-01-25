@@ -3,7 +3,6 @@ import axios from "axios";
 import React from "react";
 import Provide from "./Provide";
 import "./style.css";
-import { NavLink } from "react-router-dom";
 
 const Map = () => {
   const [places, setPlaces] = useState([]);

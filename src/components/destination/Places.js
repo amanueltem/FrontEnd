@@ -2,10 +2,9 @@ import Axum from "./Axum";
 import Alamata from "./Almata";
 import Gheralta from "./Gheralta.js";
 import "./places.css";
-import Mary_Zion from "./Mary_Zion.js";
-import Debre_Damo from "./Debre_Damo.js";
+import MaryZion from "./Mary_Zion.js";
+import DebreDamo from "./Debre_Damo.js";
 import Negash from "./Negash.js";
-import { NavLink } from "react-router-dom";
 export default function Places() {
   return (
     <div style={{ marginLeft: "5%", marginRight: "5%" }}>
@@ -16,8 +15,8 @@ export default function Places() {
         <Axum />
         <Alamata />
         <Gheralta />
-        <Mary_Zion />
-        <Debre_Damo />
+        <MaryZion />
+        <DebreDamo />
         <Negash />
       </div>
     </div>
