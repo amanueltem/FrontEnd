@@ -1,0 +1,6 @@
+# /frontend/netlify.toml
+
+[build]
+  command = "npm run build"  # Adjust this based on your frontend build command
+  publish = "build"  # Adjust this based on your frontend build output directory within /frontend
+
